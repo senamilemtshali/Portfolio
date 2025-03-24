@@ -1,0 +1,12 @@
+/* AboutSection.css */
+.about-section {
+    background-color: white;
+  }
+  
+  .about-text {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666;
+    text-align: center;
+  }

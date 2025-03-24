@@ -1,0 +1,40 @@
+/* HeroSection.css */
+.hero-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/hero-bg.jpg'); /* Adjusted path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0 2rem;
+}
+  
+.hero-content {
+    max-width: 800px;
+    color: white;
+    text-align: center; /* Centers the content, including the button */
+}
+  
+.hero-content span {
+    color: #fb7185;
+}
+  
+.cta-button {
+    background-color: #fb7185;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem; /* Increased margin to move it further down */
+    display: inline-block; /* Ensures proper centering */
+    text-align: center;
+}
+  
+.cta-button:hover {
+    background-color: #f43f5e;
+}

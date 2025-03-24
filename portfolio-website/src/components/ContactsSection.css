@@ -1,0 +1,119 @@
+/* ContactsSection.css */
+.contacts-section {
+    background-color: #f9fafb;
+  }
+  
+  .contacts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-icon {
+    font-size: 1.8rem; /* Consistent size for all icons */
+    color: #fb7185; /* Default icon color */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-icon:hover {
+    color: #f43f5e; /* Hover color for icons */
+  }
+  
+  .email-icon::before {
+    content: "✉";
+  }
+  
+  .phone-icon::before {
+    content: "☎";
+  }
+  
+  .at-icon {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+  .contact-link {
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    color: #fb7185;
+  }
+  
+  .contact-text {
+    color: #666;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem; /* Add spacing between icons */
+    margin-top: 1rem;
+    justify-content: center; /* Center the icons */
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fb7185; /* Default background color */
+    color: white; /* Icon color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon::before {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .github-icon::before {
+    content: "G";
+  }
+  
+  .instagram-icon::before {
+    content: "I";
+  }
+  
+  .social-icon:hover {
+    background-color: #f43f5e; /* Hover background color */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+
+  /* ContactsSection.css */
+.social-icon span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.github-icon::before {
+  content: "G";
+  display: inline-block;
+}
+
+.instagram-icon::before {
+  content: "I";
+  display: inline-block;
+}

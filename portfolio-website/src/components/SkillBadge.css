@@ -1,0 +1,32 @@
+/* SkillBadge.css */
+.skill-badge {
+    width: 120px;
+    height: 120px;
+    background-color: #fb7185;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-badge:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .skill-badge {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-badge {
+      width: 80px;
+      height: 80px;
+      font-size: 0.9rem;
+    }
+  }

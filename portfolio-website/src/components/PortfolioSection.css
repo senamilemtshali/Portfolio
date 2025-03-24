@@ -1,0 +1,36 @@
+/* PortfolioSection.css */
+.portfolio-section {
+    background-color: white;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #fb7185;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      grid-template-columns: 1fr;
+    }
+  }

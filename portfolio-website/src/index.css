@@ -1,0 +1,100 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+section:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-divider {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 3rem;
+  position: relative;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  width: 5rem;
+  height: 2px;
+  background-color: #fb7185;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.diamond {
+  width: 12px;
+  height: 12px;
+  background-color: #fb7185;
+  transform: rotate(45deg);
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
