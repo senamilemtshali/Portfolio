@@ -42,21 +42,22 @@ const PortfolioSection = () => {
               key={index}
               title={project.title} 
               description={project.description}
-              image={project.image} 
-              colorClass={project.colorClass}
               githubLink={project.githubLink}
             />
           ))}
         </div>
-        <div className="slider-dots">
-          {[0, 1, 2].map((dot) => (
-            <span 
-              key={dot}
-              className={`dot ${activeDot === dot ? 'active' : ''}`}
-              onClick={() => setActiveDot(dot)}
-            ></span>
-          ))}
-        </div>
+        {/* Conditionally render dots only if there are more than 3 projects */}
+        {projects.length > 3 && (
+          <div className="slider-dots">
+            {projects.map((_, dotIndex) => (
+              <span 
+                key={dotIndex}
+                className={`dot ${activeDot === dotIndex ? 'active' : ''}`}
+                onClick={() => setActiveDot(dotIndex)}
+              ></span>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

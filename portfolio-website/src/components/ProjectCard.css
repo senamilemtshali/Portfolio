@@ -52,13 +52,23 @@
 /* Remove individual color classes */
 
 .github-link {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #0366d6;
-  text-decoration: none;
-  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fb7185; /* Pink background color */
+  color: white; /* Icon color */
+  border-radius: 50%; /* Circular shape */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .github-link:hover {
-  text-decoration: underline;
+  background-color: #f43f5e; /* Darker pink on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.github-icon {
+  font-size: 1.2rem; /* Adjust icon size */
 }

@@ -1,5 +1,6 @@
 // ProjectCard.js
 import React from 'react';
+import { FaGithub } from 'react-icons/fa'; // Import GitHub icon
 import './ProjectCard.css';
 
 const ProjectCard = ({ title, description, githubLink }) => {
@@ -13,7 +14,7 @@ const ProjectCard = ({ title, description, githubLink }) => {
         rel="noopener noreferrer" 
         className="github-link"
       >
-        View on GitHub
+        <FaGithub className="github-icon" />
       </a>
     </div>
   );
